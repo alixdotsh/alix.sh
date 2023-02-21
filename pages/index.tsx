@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from "next/link"
 
-import { Github, Twitter, Mail, Clipboard } from "lucide-react"
+import { Github, Twitter, Mail, Clipboard , ChevronRight, Briefcase, Terminal, Box} from "lucide-react"
 import { AnimatePresence, motion } from "framer-motion"
 
 function Header({ title } : { title: any}) {
@@ -20,6 +20,24 @@ const socials = [
     name: "twitter",
     icon: Twitter,
     link: "https://twitter.com/alixdotsh"
+  }
+]
+
+const sections = [
+  {
+    name: "work",
+    icon: Briefcase,
+    link: "/work"
+  },
+  {
+    name: "tech i use",
+    icon: Terminal,
+    link: "/tech"
+  },
+  {
+    name: "code",
+    icon: Box,
+    link: "/code"
   }
 ]
 
@@ -77,6 +95,19 @@ const Home = () => {
             }} size={28} className="cursor-pointer" />
       </div>
     </div>
+    </div>
+    <div className="flex flex-col gap-4">
+      {sections.map(x =>
+        <Link key={x.name} href={x.link}>
+          <a className="flex items-center gap-2 bg-gray-900 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group">
+            <x.icon size={22} strokeWidth={2.2} />
+            <h1 className="text-xl font-larsseitbold">{x.name}</h1>
+            <div className="ml-auto">
+              <ChevronRight size={20} strokeWidth={2.2} className="ml-8 sm:ml-2 text-neutral-400 group-hover:text-white duration-200" />
+            </div>
+          </a>
+        </Link>
+        )}
     </div>
     </>
   );
