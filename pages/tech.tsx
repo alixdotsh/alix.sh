@@ -60,7 +60,7 @@ const Work: NextPage = () => {
           <h1>back</h1>
       </Link>
       <h1 className="text-7xl font-larsseitbold text-white relative z-20">tech i use</h1>
-      <h2 className="font-larsseit text-lg text-white">technology that i use everyday for general use or development</h2>
+      <h2 className="font-larsseit text-lg text-white">technology that i use everyday for general use or development.</h2>
       <div className="mt-2">
         <h1 className="font-larsseitbold text-3xl my-2 text-white">main</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

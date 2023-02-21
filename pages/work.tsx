@@ -35,7 +35,7 @@ const Work: NextPage = () => {
           <h1>back</h1>
       </Link>
       <h1 className="text-7xl font-larsseitbold relative z-20 text-white">work</h1>
-      <h2 className="font-larsseit text-lg text-white">here's some of the stuff i've made.</h2>
+      <h2 className="font-larsseit text-lg text-white">some of the stuff i've made.</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
         {work.map(x => (
           <div key={x.name} className="px-5 py-3 col-span-2 bg-neutral-900 bg-opacity-40 backdrop-blur-md rounded-xl">
