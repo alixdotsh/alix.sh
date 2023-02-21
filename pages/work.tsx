@@ -28,7 +28,7 @@ const work = [
 
 const Work: NextPage = () => {
   return (
-    <div className="pattern-dots pattern-neutral-900 pattern-bg-transparent pattern-size-6 pattern-opacity-100">
+    <div className="pattern-dots pattern-neutral-900 pattern-bg-transparent pattern-size-6 pattern-opacity-100 w-screen h-screen">
     <div className="max-w-6xl px-6 sm:p-0 p-8 sm:py-20 m-auto">
       <Link href="/" className="flex items-center gap-1 font-medium relative z-30 text-gray-200 hover:text-white duration-200">
           <ChevronLeft size={18} strokeWidth={2.8} />
