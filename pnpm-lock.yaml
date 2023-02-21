@@ -1,26 +1,38 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@bradgarropy/next-seo': ^1.2.0
+  '@icons-pack/react-simple-icons': ^6.3.0
   '@types/node': 18.11.3
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   autoprefixer: ^10.4.13
+  clsx: ^1.2.1
   framer-motion: ^9.0.7
   lucide-react: ^0.115.0
   next: latest
+  next-router: ^1.3.6
+  next-seo: ^5.15.0
   postcss: ^8.4.21
   react: 18.2.0
   react-dom: 18.2.0
+  react-simple-icons: 1.0.0-beta.5
   tailwindcss: ^3.2.7
   tailwindcss-bg-patterns: ^0.2.0
   typescript: 4.9.4
 
 dependencies:
+  '@bradgarropy/next-seo': 1.2.0_react@18.2.0
+  '@icons-pack/react-simple-icons': 6.3.0_react@18.2.0
+  clsx: 1.2.1
   framer-motion: 9.0.7_biqbaboplfbrettd7655fr4n2y
   lucide-react: 0.115.0_react@18.2.0
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
+  next-router: 1.3.6_next@13.1.6+react@18.2.0
+  next-seo: 5.15.0_3vryta7zmbcsw4rrqf4axjqggm
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-simple-icons: 1.0.0-beta.5
 
 devDependencies:
   '@types/node': 18.11.3
@@ -33,6 +45,15 @@ devDependencies:
   typescript: 4.9.4
 
 packages:
+
+  /@bradgarropy/next-seo/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-AdSZOJw3NIvTxKoRv5IDX/WFhLi7Y2bvmW0OVWLf/rzIJRONms3MZ+aJz2u5Hv2FMgl4cT2Y/4xxEuOmB5u03w==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@emotion/is-prop-valid/0.8.8:
     resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
@@ -55,6 +76,18 @@ packages:
       postcss: 8.4.21
       purgecss: 3.1.3
     dev: true
+
+  /@icons-pack/react-simple-icons/6.3.0_react@18.2.0:
+    resolution: {integrity: sha512-6YSIln+gWj01E0E3BvnkEDpe3+39aalRrQB89hheMHp3bHffDD6rtqOYQhH6eRGGNhiRb/4k8LDeQenp3kXQWw==}
+    peerDependencies:
+      react: ^16.13 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@jxnblk/simple-icons/1.0.0:
+    resolution: {integrity: sha512-gERta8XuAckJ4xozpICmx8Uu5x63cvwaEd/wbNQyVMCTzg/lrL3YbNve/4Hn3+tQtx4R8EY3OOZs5etlPxLP4A==}
+    dev: false
 
   /@motionone/animation/10.15.1:
     resolution: {integrity: sha512-mZcJxLjHor+bhcPuIFErMDNyrdb2vJur8lSfMCsuCB4UyV8ILZLvK+t+pg56erv8ud9xQGK/1OGPt10agPrCyQ==}
@@ -372,7 +405,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001457
-      electron-to-chromium: 1.4.304
+      electron-to-chromium: 1.4.305
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -424,6 +457,11 @@ packages:
 
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/1.9.3:
@@ -506,8 +544,8 @@ packages:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
     dev: true
 
-  /electron-to-chromium/1.4.304:
-    resolution: {integrity: sha512-6c8M+ojPgDIXN2NyfGn8oHASXYnayj+gSEnGeLMKb9zjsySeVB/j7KkNAAG9yDcv8gNlhvFg5REa1N/kQU6pgA==}
+  /electron-to-chromium/1.4.305:
+    resolution: {integrity: sha512-WETy6tG0CT5gm1O+xCbyapWNsCcmIvrn4NHViIGYo2AT8FV2qUCXdaB+WqYxSv/vS5mFqhBYnfZAAkVArjBmUg==}
     dev: true
 
   /escalade/3.1.1:
@@ -758,6 +796,29 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  /next-router/1.3.6_next@13.1.6+react@18.2.0:
+    resolution: {integrity: sha512-o7dGCVgKg1XWEjmf+31mabJoSKud4Y51s4Ymwzcn9upaNs5kciHil0TJPlDQOlZIZe1/om1obmUc59FuVtBXCQ==}
+    peerDependencies:
+      next: 2 - 5
+      react: ^15.4.2 || ^16
+    dependencies:
+      next: 13.1.6_biqbaboplfbrettd7655fr4n2y
+      path-to-regexp: 2.4.0
+      react: 18.2.0
+    dev: false
+
+  /next-seo/5.15.0_3vryta7zmbcsw4rrqf4axjqggm:
+    resolution: {integrity: sha512-LGbcY91yDKGMb7YI+28n3g+RuChUkt6pXNpa8FkfKkEmNiJkeRDEXTnnjVtwT9FmMhG6NH8qwHTelGrlYm9rgg==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 13.1.6_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /next/13.1.6_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-hHlbhKPj9pW+Cymvfzc15lvhaOZ54l+8sXDXJWm3OBNBzgrVj6hwGPmqqsXg40xO1Leq+kXpllzRPuncpC0Phw==}
     engines: {node: '>=14.6.0'}
@@ -851,6 +912,10 @@ packages:
   /path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
+
+  /path-to-regexp/2.4.0:
+    resolution: {integrity: sha512-G6zHoVqC6GGTQkZwF4lkuEyMbVOjoBKAEybQUypI1WTkqinCOrq2x6U2+phkJ1XsEMTy4LjtwPI7HW+NVrRR2w==}
+    dev: false
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
@@ -1016,6 +1081,12 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-simple-icons/1.0.0-beta.5:
+    resolution: {integrity: sha512-+6XlS1jwHLTk6iNkPuk2S/X9cU7MUm7ZRDYJy4ZZEDLv9oWQPAgcSGUx4wxlI9lVH/aaz+1umT7YcwYAbVjaqA==}
+    dependencies:
+      '@jxnblk/simple-icons': 1.0.0
     dev: false
 
   /react/18.2.0:

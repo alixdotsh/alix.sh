@@ -69,7 +69,7 @@ const Home = () => {
           </motion.div>
         </AnimatePresence>
       </div>
-    <div className="bg-black flex flex-col sm:flex-row justify-center gap-20 w-screen h-screen p-2">
+    <div className="pattern-dots pattern-neutral-900 pattern-bg-transparent pattern-size-6 pattern-opacity-100 flex flex-col sm:flex-row justify-center gap-20 w-screen h-screen p-2">
     <div>
       <div className="bg-gradient-to-r from-pink-600 to-purple-500 via-rose-500 animate-gradient-x justify-center 
       items-center flex flex-col content-center rounded-md shadow-xl box-border h-20 p-4 m-20 border-2 border-black place-content-center">
