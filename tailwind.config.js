@@ -6,6 +6,7 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+},
     extend: {
       fontFamily: {
         larsseit: ["larsseit"],
@@ -14,6 +15,7 @@ module.exports = {
         larsseititalic: ["larsseititalic"]
       }
     },
-  },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-bg-patterns')
+  ],
 }
