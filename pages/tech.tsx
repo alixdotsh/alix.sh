@@ -6,17 +6,17 @@ import clsx from "clsx"
 
 const languages = [
   {
-    name: 'macBook pro 13"',
+    name: 'MacBook Pro 13"',
     type: "macOS",
-    description: "apple m2, 8gb ram, 512gb ssd",
+    description: "Apple M2, 8GB RAM, 512GB SSD",
     icon: Monitor,
     color: "text-[#ffffff] p-[2px]",
     background: "bg-[#262626]"
   },
   {
-    name: 'lenovo legion 5 15ARH05',
-    type: "windows",
-    description: "ryzen 7 4800h, 16gb ram, nvidia gtx 1660ti, 512gb ssd",
+    name: 'Lenovo Legion 5 15ARH05',
+    type: "Windows",
+    description: "Ryzen 7 4800H, 16GB RAM, NVIDIA GTX 1660TI, 512GB SSD",
     icon: Monitor,
     color: "text-[#ffffff] p-[2px]",
     background: "bg-[#262626]"
@@ -25,25 +25,25 @@ const languages = [
 
 const frameworks = [
   {
-    name: "ipad pro",
-    language: "ipadOS",
-    description: "m1, 128gb, i use apple pencil alongside",
+    name: "iPad Pro",
+    language: "iPadOS",
+    description: "Apple M1, 128GB, i use apple pencil alongside",
     icon: Tablet,
     color: "text-[#ffffff] p-[2px]",
     background: "bg-[#262626]"
   },
   {
-    name: "iphone xr",
+    name: "iPhone XR",
     language: "iOS",
-    description: "64gb",
+    description: "64GB",
     icon: Smartphone,
     color: "text-[#ffffff] p-[2px]",
     background: "bg-[#262626]"
   },
   {
-    name: "apple watch",
+    name: "Apple Watch",
     language: "watchOS",
-    description: "series 7",
+    description: "Series 7",
     icon: Watch,
     color: "text-[#ffffff] p-[2px]",
     background: "bg-[#262626]"
