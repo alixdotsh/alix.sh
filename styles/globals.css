@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-}
-
 @font-face {
     font-family: "larsseit";
     src: url("../fonts/Larsseit/larsseit.woff2") format("woff2"),
