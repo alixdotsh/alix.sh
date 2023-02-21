@@ -69,10 +69,10 @@ const Home = () => {
           </motion.div>
         </AnimatePresence>
       </div>
-    <div className="bg-black flex flex-col items-center sm:flex-row justify-center gap-20 w-screen h-screen p-2">
+    <div className="bg-black flex flex-col sm:flex-row justify-center gap-20 w-screen h-screen p-2">
     <div>
-      <div className="bg-gradient-to-r from-pink-600 to-purple-500 via-rose-500 animate-gradient-x justify-center items-center flex flex-col content-center 
-      auto rounded-md shadow-xl box-border h-20 -32 p-4 m-9 border-2 border-black">
+      <div className="bg-gradient-to-r from-pink-600 to-purple-500 via-rose-500 animate-gradient-x justify-center 
+      items-center flex flex-col content-center rounded-md shadow-xl box-border h-20 p-4 m-20 border-2 border-black place-content-center">
         <p className='text-white text-2xl text-center font-larsseitbold'>(｡•̀ᴗ-)✧</p>
       </div>
       <h1 className="text-4xl text-center text-white font-larsseitbold sm:text-7xl tracking-tighter">hi! i'm alix</h1>
@@ -93,21 +93,22 @@ const Home = () => {
               }, 5000)
 
             }} size={28} className="cursor-pointer" />
-      </div>
-    </div>
-    </div>
-    <div className="flex flex-col gap-4">
-      {sections.map(x =>
-        <Link key={x.name} href={x.link}>
-          <a className="flex items-center gap-2 bg-gray-900 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group">
-            <x.icon size={22} strokeWidth={2.2} />
-            <h1 className="text-xl font-larsseitbold">{x.name}</h1>
-            <div className="ml-auto">
-              <ChevronRight size={20} strokeWidth={2.2} className="ml-8 sm:ml-2 text-neutral-400 group-hover:text-white duration-200" />
             </div>
-          </a>
+      <div className="flex flex-row gap-4">
+        {sections.map(x =>
+        <>
+        <Link key={x.name} href={x.link}
+        className="flex text-white items-center gap-2 my-9 bg-neutral-900 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group">
+          <x.icon size={22} strokeWidth={2.2} />
+          <h1 className="text-white text-xl font-larsseitbold">{x.name}</h1>
+          <div className="ml-auto">
+            <ChevronRight size={20} strokeWidth={2.2} className="ml-8 sm:ml-2 text-neutral-400 group-hover:text-white duration-200" />
+          </div>
         </Link>
-        )}
+        </>
+          )}
+      </div>
+      </div>
     </div>
     </>
   );
