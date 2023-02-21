@@ -17,7 +17,7 @@ const languages = [
   {
     name: "python",
     type: "backend",
-    description: "the language that i used when first started coding. i made a discord bot using python.",
+    description: "the language that i used when first started coding, which i made a discord bot with.",
     icon: Sipython,
     color: "text-[#3776AB] p-[2px]",
     background: "bg-[#111a24]"
@@ -28,7 +28,7 @@ const frameworks = [
   {
     name: "react",
     language: "typescript",
-    description: "the ui framework that i use primarily",
+    description: "the ui framework that i use primarily.",
     icon: Sireact,
     color: "text-[#61DAFB]",
     background: "bg-[#1a3036]",

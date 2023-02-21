@@ -14,15 +14,15 @@ const work = [
     name: "lime",
     year: "2020-2021",
     role: "frontent + backend",
-    description: "discord bot written in python that was for general purpose.",
-    link: "https://github.com/alixdotsh/lime",
+    description: "discord bot written in python that was for general purpose. find the repo by clicking the github icon at the home page :3",
+    link: "/",
   },
   {
     name: "kaedehara.xyz",
     year: "2023",
     role: "frontend + design",
     description: "this website. very simple designs, but it shows a general idea of my capabilities.",
-    link: "https://kaedehara.xyz",
+    link: "/",
   },
 ]
 
