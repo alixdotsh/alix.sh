@@ -4,8 +4,8 @@ import router, { useRouter } from "next/router"
 
 import Head from "next/head"
 
-import { AnimatePresence, motion } from "framer-motion"
 import SEO from "@bradgarropy/next-seo"
+import { AnimatePresence, motion } from "framer-motion"
 
 const variants = {
   hidden: { opacity: 0, x: -100, y: 0 },
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         twitter={{
           image: "https://kaedehara.xyz",
           card: "summary_large_image",
-          site: "@alixdotsh"
+          site: "@alixdotsh",
         }}
       />
       <Head>

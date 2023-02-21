@@ -50,7 +50,7 @@ const frameworks = [
   }
 ]
 
-const Work: NextPage = () => {
+const Tech: NextPage = () => {
     return (
         <>
         <div className="bg-black pattern-dots pattern-neutral-900 pattern-bg-transparent pattern-size-6 pattern-opacity-100">
@@ -103,4 +103,4 @@ const Work: NextPage = () => {
     )
 }
 
-export default Work
+export default Tech
