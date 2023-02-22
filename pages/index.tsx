@@ -63,22 +63,25 @@ const Home = () => {
             animate={showCopied ? "visible" : "exit"} 
             transition={{ type: "spring", duration: 0.5 }} 
             variants={variants}
-            className="text-white flex items-center gap-1 py-2 px-4 font-medium bg-gray-900 bg-opacity-40 rounded-full backdrop-blur-md">
+            className="text-white flex items-center gap-1 py-2 px-4 font-medium bg-gray-900 bg-opacity-40 rounded-full
+            backdrop-blur-md">
             <Clipboard size={18} strokeWidth={2.2} />
             <h1>Copied to clipboard!</h1>
           </motion.div>
         </AnimatePresence>
       </div>
-    <div className="pattern-dots pattern-neutral-900 pattern-bg-transparent pattern-size-6 pattern-opacity-100 flex flex-col sm:flex-row justify-center gap-20 w-screen h-screen p-2">
+    <div className="pattern-dots pattern-neutral-900 pattern-bg-transparent pattern-size-6 pattern-opacity-100 flex flex-col
+    sm:flex-row justify-center items-center gap-20 w-screen h-screen p-2">
     <div>
       <div className="bg-gradient-to-r from-pink-600 to-purple-500 via-rose-500 animate-gradient-x justify-center 
-      items-center flex flex-col content-center rounded-md shadow-xl box-border h-20 p-4 m-20 border-2 border-black place-content-center">
+      items-center flex flex-col content-center rounded-md shadow-xl box-border h-20 p-4 m-20 border-2 border-black
+      place-content-center">
         <p className='text-white text-2xl text-center font-larsseitbold'>(｡•̀ᴗ-)✧</p>
       </div>
       <h1 className="text-4xl text-center text-white font-larsseitbold sm:text-7xl tracking-tighter">hi! i'm alix</h1>
       <h2 className="text-2xl text-center text-white font-larsseit">tired artist and web developer <br />
       gamer on the side :3</h2>
-      <div className="flex text-white items-center justify-center gap-2 mt-1">
+      <div className="flex text-white items-center align-center justify-center gap-2 mt-1">
         {socials.map(x=>
           <a key={x.name} href={x.link}>
             <x.icon size={28}/>
@@ -94,11 +97,11 @@ const Home = () => {
 
             }} size={28} className="cursor-pointer" />
             </div>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row items-center gap-2">
         {sections.map(x =>
         <>
         <Link key={x.name} href={x.link}
-        className="flex text-white items-center gap-2 my-9 bg-neutral-900 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group">
+        className="flex text-white items-center gap-2 my-4 bg-neutral-900 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group">
           <x.icon size={22} strokeWidth={2.2} />
           <h1 className="text-white text-xl font-larsseitbold">{x.name}</h1>
           <div className="ml-auto">
