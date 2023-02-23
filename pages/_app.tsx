@@ -1,11 +1,11 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import router, { useRouter } from "next/router"
+import type { AppProps } from "next/app"
+import  { useRouter } from "next/router"
 
+import { AnimatePresence, motion } from "framer-motion"
+import SEO from "@bradgarropy/next-seo"
 import Head from "next/head"
 
-import SEO from "@bradgarropy/next-seo"
-import { AnimatePresence, motion } from "framer-motion"
+import "../styles/globals.css"
 
 const variants = {
   hidden: { opacity: 0, x: -100, y: 0 },
@@ -20,11 +20,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-    <SEO
+      <SEO
         title="alix, tired artist and web developer"
         description="personal portfolio for alix"
         keywords={["alix", "website", "portfolio", "developer"]}
-        themeColor="#07070A"
+        themeColor="#e14f62"
         colorScheme="dark"
         facebook={{
           image: "https://kaedehara.xyz",
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta content="kaedehara.xyz" property="og:site_name" />
       </Head>
 
-    <div className="overflow-hidden">
+      <div className="overflow-hidden">
         <AnimatePresence
           mode="wait"
           initial={false}
@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </motion.main>
         </AnimatePresence>
       </div>
-      </>
+    </>
   );
 }
 

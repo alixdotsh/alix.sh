@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,14 +10,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-
       fontFamily: {
-        larsseit: ["larsseit"],
-        larsseitbold: ["larsseitbold"],
-        larsseitbolditalic: ["larsseitbolditalic"],
-        larsseititalic: ["larsseititalic"],
-        opensans: ["Open Sans", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"]
+        sans: ["Larsseit", defaultTheme.fontFamily.sans],
       },
 
       'animation': {
@@ -63,6 +60,16 @@ module.exports = {
     }
   },
   plugins: [
-    require('tailwindcss-bg-patterns')
+    require('tailwindcss-bg-patterns'),
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        '.glow-sm': {
+          "filter": "drop-shadow(0 0 4px rgba(255,255,255,1))"
+        },
+        '.glow-md': {
+          "filter": "drop-shadow(0 0 6px rgba(255,255,255,1))"
+        }
+      })
+    }),
   ],
 }
