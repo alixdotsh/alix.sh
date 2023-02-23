@@ -12,7 +12,9 @@ module.exports = {
         larsseit: ["larsseit"],
         larsseitbold: ["larsseitbold"],
         larsseitbolditalic: ["larsseitbolditalic"],
-        larsseititalic: ["larsseititalic"]
+        larsseititalic: ["larsseititalic"],
+        opensans: ["Open Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"]
       },
 
       'animation': {
