@@ -108,7 +108,7 @@ const Home = () => {
             <h1 className="text-neutral-400 mb-3">frameworks</h1>
             <div className="flex flex-col gap-2">
               <Entry name="react" summary="my ui framework of choice, along with being very versatile" />
-              <Entry name="tailwindcss" summary="makes css more easier and doesn't need much css files" />
+              <Entry name="tailwindcss" summary="makes css more easier and more flexible" />
               <Entry name="nextjs" summary="renders my web apps and does more, making it seem like a simple website to the user." />
             </div>
           </div>

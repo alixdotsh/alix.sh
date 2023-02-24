@@ -21,9 +21,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <SEO
-        title="alix, tired artist and web developer"
-        description="personal portfolio for alix"
-        keywords={["alix", "website", "portfolio", "developer"]}
+        title="alix"
+        description="digital artist, software engineer and ui designer"
+        keywords={["alix", "website", "portfolio", "developer", "artist", "designer"]}
         themeColor="#e14f62"
         colorScheme="dark"
         facebook={{
