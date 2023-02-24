@@ -86,7 +86,7 @@ const Home = () => {
           <div>
             <h1 className="text-neutral-400 mb-3">projects</h1>
             <div className="flex flex-col gap-2">
-              <Entry name="kaedehara.xyz" href="https://kaedehara.xyz" year={2023} summary="this website right here, welcome :)" />
+              <Entry name="alix.sh" href="https://alix.sh" year={2023} summary="this website right here, welcome :)" />
               <Entry name="lime" href="https://github.com/alixdotsh/lime" year={2020} summary="a discord bot written in python using the discord.py api and a utility called voxelbotutils" />
             </div>
           </div>

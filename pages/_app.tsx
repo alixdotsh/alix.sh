@@ -27,19 +27,19 @@ function MyApp({ Component, pageProps }: AppProps) {
         themeColor="#e14f62"
         colorScheme="dark"
         facebook={{
-          image: "https://kaedehara.xyz",
-          url: "https://kaedehara.xyz",
+          image: "https://alix.sh",
+          url: "https://alix.sh",
           type: "website",
         }}
         twitter={{
-          image: "https://kaedehara.xyz",
+          image: "https:/alix.sh",
           card: "summary_large_image",
           site: "@alixdotsh",
         }}
       />
       <Head>
         <title>alix</title>
-        <meta content="kaedehara.xyz" property="og:site_name" />
+        <meta content="alix.sh" property="og:site_name" />
       </Head>
 
       <div className="overflow-hidden">
