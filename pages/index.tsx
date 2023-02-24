@@ -67,7 +67,7 @@ const Home = () => {
               </a>
             )}
             <Mail onClick={() => {
-              navigator.clipboard.writeText("alix@kaedehara.xyz")
+              navigator.clipboard.writeText("me@alix.sh")
               setShowCopied(true)
 
               setInterval(() => {
@@ -119,7 +119,7 @@ const Home = () => {
             i'm always open to talk, whether it's for inquiries about a possible job or not. the best way to contact me is on
             <span> <a className="underline" href="https://twitter.com/alixdotsh">twitter</a></span>, or on
             <span> <a className="underline" href="https://t.me/alixowo">telegram</a></span>. for more important inquiries
-            you can contact me via email at <span> <a className="underline" href="mailto:alix@kaedehara.xyz">alix@kaedehara.xyz</a></span> 
+            you can contact me via email at <span> <a className="underline" href="mailto:me@alix.sh">me@alix.sh</a></span> 
           </p>
         </div>
       </div>
