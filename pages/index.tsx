@@ -122,7 +122,7 @@ const variants = {
         </div>
         <div className="mx-auto max-w-2xl">
           <h1 className="mb-3 mt-2 underline decoration-alix-300">network</h1>
-          <p className="text-alix-400">
+          <p className="text-alix-200">
             i'm always open to talk, whether it's for inquiries about a possible job or not. the best way to contact me is on
             <span> <a className="underline" href="https://twitter.com/alixdotsh">twitter</a></span>, or on
             <span> <a className="underline" href="https://t.me/alixdotsh">telegram</a></span>. for more important inquiries
