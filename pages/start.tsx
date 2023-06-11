@@ -40,7 +40,7 @@ const start = () => {
             <div className="bg-alix-900 p-5 text-center col-span-1 rounded-xl">
               <h1 className="text-lg text-right">__________________ - x</h1>
               <p className="text-sm text-left">/apps</p>
-              <p className="text-sm text-right">icons linking to twit, spotify, twitch, github, etc...</p>
+              <p className="text-sm text-right">icons linking to twitter, spotify, twitch, github, etc...</p>
             </div>
           </div>
         </div>
