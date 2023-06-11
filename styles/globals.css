@@ -10,11 +10,11 @@
 }
 
 html {
-    background-color: black;
+    background-color: #0d0b17;
     height: 100vh;
     width: 100vw;
 
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
         rgba(255, 255, 255, 0.08) 9%,
         transparent 9%
     );
@@ -27,7 +27,7 @@ html {
     z-index: 1;
 
     transition: opacity 800ms ease,
-        background-size 800ms ease;
+        background-size 800ms ease; */
 
     color-scheme: dark;
 }

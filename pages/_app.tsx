@@ -23,8 +23,15 @@ function MyApp({ Component, pageProps }: AppProps) {
       <SEO
         title="alix"
         description="digital artist, software engineer and ui designer"
-        keywords={["alix", "website", "portfolio", "developer", "artist", "designer"]}
-        themeColor="#e14f62"
+        keywords={[
+          "alix",
+          "website",
+          "portfolio",
+          "developer",
+          "artist",
+          "designer",
+        ]}
+        themeColor="#0d0b17"
         colorScheme="dark"
         facebook={{
           image: "https://alix.sh",
