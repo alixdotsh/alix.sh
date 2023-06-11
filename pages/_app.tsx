@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           "artist",
           "designer",
         ]}
-        themeColor="#0d0b17"
+        themeColor="#a49dcf"
         colorScheme="dark"
         facebook={{
           image: "https://alix.sh",
