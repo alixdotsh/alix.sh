@@ -108,7 +108,7 @@ const variants = {
             <h1 className="text-alix-400 mb-3">programming languages</h1>
             <div className="flex flex-col gap-2">
               <Entry name="typescript" summary="my main language that i use for making websites" />
-              <Entry name="python" summary="not very familiar with, but i know some things" />
+              <Entry name="python" summary="my second most familiar language" />
             </div>
           </div>
           <div>
