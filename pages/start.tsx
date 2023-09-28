@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { NextApiRequest, NextApiResponse } from "next";
-import SpotifyNowPLaying from "./spotify/spotifynowplaying.js";
 import moment from "moment";
 require('dotenv').config();
 
@@ -55,7 +54,6 @@ const start = () => {
           <div className="bg-alix-900 p-5 text-center rounded-xl">
             <p className="text-sm text-left">/music</p>
             <p className="text-sm text-right">spotify status would go here</p>
-            <SpotifyNowPLaying />
           </div>
           <div className="bg-alix-900 p-5 text-center col-span-2 rounded-xl">
             <p className="text-sm text-left">/cmd</p>
