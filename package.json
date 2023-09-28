@@ -7,10 +7,15 @@
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.2.0",
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@icons-pack/react-simple-icons": "^6.3.0",
     "clsx": "^1.2.1",
+    "dotenv": "^16.3.1",
     "framer-motion": "^9.1.6",
     "lucide-react": "^0.115.0",
+    "moment": "^2.29.4",
     "next": "latest",
     "next-fonts": "^1.5.1",
     "next-router": "^1.3.6",
@@ -18,7 +23,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-simple-icons": "1.0.0-beta.5",
-    "react-simple-typewriter": "^5.0.1"
+    "react-simple-typewriter": "^5.0.1",
+    "react-use-lanyard": "^0.3.0",
+    "styled-components": "^6.0.8"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

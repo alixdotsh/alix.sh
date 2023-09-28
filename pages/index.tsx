@@ -102,7 +102,7 @@ const Home = () => {
                 name="keqingmains.com"
                 href="https://keqingmains.com"
                 year={2023}
-                summary="currently managing publishing/updating web pages while also creating tools and designing templates to help the team. working on the site resdesign as well."
+                summary="currently managing publishing and updating web pages while also creating tools and designing templates to help the team. working on the site resdesign as well."
               />
             </div>
           </div>
@@ -126,10 +126,7 @@ const Home = () => {
           <div>
             <h1 className="text-alix-400 mb-3">other</h1>
             <div className="flex flex-col gap-2">
-              <Entry
-                name="art"
-                summary="concept art, anthropomorphism, anatomy"
-              />
+              <Entry name="art" summary="concept art, anthro, anatomy" />
               <Entry
                 name="games"
                 summary="genshin impact, osu!, valorant, overwatch, minecraft, and others"
