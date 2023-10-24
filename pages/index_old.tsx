@@ -1,17 +1,6 @@
 import { useState } from "react";
 
-import {
-  Github,
-  Twitter,
-  Mail,
-  Clipboard,
-  Box,
-  Code,
-  Briefcase,
-  ChevronRight,
-  Cpu,
-  Palmtree,
-} from "lucide-react";
+import { Github, Twitter, Mail, Clipboard, Box, Code } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Entry from "./components/entry";
@@ -73,8 +62,8 @@ const Home = () => {
           </h1>
           <p className="text-2xl text-alix-50">
             digital artist, <Box className="inline" /> software engineer, based
-            in north carolina <br />
-            IT, linux, and apple enthusiast <br /> always thinking with
+            in north carolina, IT, linux, and apple enthusiast, always thinking
+            with
             <span className="font-bold glow-sm"> design</span> in mind <br />
             <span className="font-bold glow-sm">focused on aesthetics, </span>
             and creating <span className="font-bold glow-sm">
@@ -105,54 +94,75 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 mt-4 mx-auto">
-          <a
-            href="/work"
-            className="flex items-center gap-2 bg-alix-800 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group"
-          >
-            <Briefcase size={28} strokeWidth={2.2} />
-            <h1 className="text-xl font-bold">work</h1>
-            <div className="ml-auto">
-              <ChevronRight
-                size={20}
-                strokeWidth={2.2}
-                className="ml-8 sm:ml-2 text-alix-400 group-hover:text-alix-200 duration-200"
+        <div className="container mx-auto grid grid-cols-3 grid-rows-2 gap-8 m-20 max-w-2xl text-md">
+          <div>
+            <h1 className="text-alix-400 mb-3">current</h1>
+            <div>
+              <Entry
+                name="keqingmains.com"
+                href="https://keqingmains.com"
+                year={2023}
+                summary="currently managing publishing and updating web pages while also creating tools and designing templates to help the team. working on the site resdesign as well."
               />
             </div>
-          </a>
-          <a
-            href="/tech"
-            className="flex items-center gap-2 bg-alix-800 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group"
-          >
-            <Cpu size={28} strokeWidth={2.2} />
-            <h1 className="text-xl font-bold">tech</h1>
-            <div className="ml-auto">
-              <ChevronRight
-                size={20}
-                strokeWidth={2.2}
-                className="ml-8 sm:ml-2 text-alix-400 group-hover:text-alix-200 duration-200"
+          </div>
+          <div>
+            <h1 className="text-alix-400 mb-3">projects</h1>
+            <div className="flex flex-col gap-2">
+              <Entry
+                name="alix.sh"
+                href="https://alix.sh"
+                year={2023}
+                summary="this website right here, welcome :)"
+              />
+              <Entry
+                name="lime"
+                href="https://github.com/alixdotsh/lime"
+                year={2020}
+                summary="a discord bot written in python using the discord.py api and a utility called voxelbotutils"
               />
             </div>
-          </a>
-          <a
-            href="/life"
-            className="flex items-center gap-2 bg-alix-800 bg-opacity-50 py-2 px-4 rounded-xl backdrop-blur-sm group"
-          >
-            <Palmtree size={28} strokeWidth={2.2} />
-            <h1 className="text-xl font-bold">life</h1>
-            <div className="ml-auto">
-              <ChevronRight
-                size={20}
-                strokeWidth={2.2}
-                className="ml-8 sm:ml-2 text-alix-400 group-hover:text-alix-200 duration-200"
+          </div>
+          <div>
+            <h1 className="text-alix-400 mb-3">other</h1>
+            <div className="flex flex-col gap-2">
+              <Entry name="art" summary="concept art, anthro, anatomy" />
+              <Entry
+                name="games"
+                summary="genshin impact, osu!, valorant, overwatch, minecraft, and others"
               />
             </div>
-          </a>
+          </div>
+          <div>
+            <h1 className="text-alix-400 mb-3">programming languages</h1>
+            <div className="flex flex-col gap-2">
+              <Entry
+                name="typescript"
+                summary="my main language that i use for making websites"
+              />
+              <Entry name="python" summary="my second most familiar language" />
+            </div>
+          </div>
+          <div>
+            <h1 className="text-alix-400 mb-3">frameworks</h1>
+            <div className="flex flex-col gap-2">
+              <Entry
+                name="react"
+                summary="my ui framework of choice, along with being very versatile"
+              />
+              <Entry
+                name="tailwindcss"
+                summary="makes css more easier and more flexible"
+              />
+              <Entry
+                name="nextjs"
+                summary="renders my web apps and does more, making it seem like a simple website to the user."
+              />
+            </div>
+          </div>
         </div>
         <div className="mx-auto max-w-2xl">
-          <h1 className="mb-3 mt-2 underline decoration-alix-300">
-            contact me
-          </h1>
+          <h1 className="mb-3 mt-2 underline decoration-alix-300">network</h1>
           <p className="text-alix-200">
             i'm always open to talk, whether it's for inquiries about a possible
             job or not. the best way to contact me is on
@@ -169,8 +179,7 @@ const Home = () => {
                 telegram
               </a>
             </span>
-            . for more important inquiries, like a job opportunity, you can
-            contact me via email at{" "}
+            . for more important inquiries you can contact me via email at{" "}
             <span>
               {" "}
               <a className="underline" href="mailto:me@alix.sh">
