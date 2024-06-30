@@ -1,5 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const plugin = require('tailwindcss/plugin');
+const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -22,7 +22,14 @@ module.exports = {
           700: "#342e5e",
           800: "#272246",
           900: "#161327",
-          950: "#0d0b17"
+          950: "#0d0b17",
+        },
+        alix2: {
+          primary: "#000000",
+          secondary: "#f5eced",
+          accent1: "#d72324",
+          accent2: "#df364b",
+          accent3: "#ee538c",
         },
       },
 
