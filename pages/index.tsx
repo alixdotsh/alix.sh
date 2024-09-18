@@ -97,13 +97,21 @@ const Home = () => {
         <div className="container mx-auto grid grid-cols-3 gap-8 m-20 max-w-2xl text-md">
           <div>
             <h1 className="text-alix2-accent3 mb-3">current focus</h1>
-            <div>
+            <div className="flex flex-col">
+              <Entry
+                name="osu! Tournament Rating"
+                href="https://otr.stagec.xyz/"
+                year={2024}
+                summary="backend developer for the API and database of the o!tr website."
+              />
+              <div className="mt-2">
               <Entry
                 name="kqm.gg"
                 href="https://kqm.gg"
                 year={2024}
                 summary="lead developer of the website redesign team. we're working on a complete refresh, including workflow changes, a brand new backend, and a new design."
-              />
+                />
+              </div>
               <p className="text-alix2-secondary">
                 questions? contact{" "}
                 <a
